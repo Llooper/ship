@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_SendPre_list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/send_pre_list_background_select"
+    >
+         <ImageView
+        	 android:contentDescription="@string/description"
+             android:id="@+id/iv_SendPre_list_picture"
+             android:layout_width="72dp"
+             android:layout_height="72dp"
+             android:layout_marginLeft="24dp"
+             android:layout_marginTop="14dp"
+             android:layout_marginBottom="14dp"
+             android:src="@drawable/send_pre_head"
+             android:background="@drawable/send_pre_head_background"
+             />
+         
+         <TextView
+             android:id="@+id/tv_SendPre_list_Detail"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_alignTop="@+id/iv_SendPre_list_picture"
+             android:layout_toRightOf="@+id/iv_SendPre_list_picture"
+             android:text="@string/detail"
+             android:singleLine="true"
+             android:gravity="center_vertical"
+             android:textSize="20sp"
+             android:layout_marginRight="14dp"
+             />
+         
+         
+         <TextView
+             android:id="@+id/tv_SendPre_list_GPS"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/detail"
+             android:singleLine="true"
+             android:gravity="center_vertical"
+             android:textSize="18sp"
+             android:layout_alignLeft="@+id/tv_SendPre_list_Detail"
+             android:layout_below="@+id/tv_SendPre_list_Detail"
+             android:layout_marginLeft="0dp"
+             android:layout_marginRight="14dp"
+             android:layout_marginTop="10dp"
+    	     android:ellipsize="end"
+    	     android:maxLines="3"
+             />
+         <View 
+             android:id="@+id/v1"
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="#FFFFFF"
+             android:layout_below="@+id/iv_SendPre_list_picture"/>
+         
+         <View 
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="#D0D0D0"
+             android:layout_below="@+id/v1"/>
+
+</RelativeLayout>

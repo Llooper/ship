@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="1dp"
+    android:background="@drawable/new_bus_list_up_background_selector"
+    >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+    	    android:paddingLeft="13dp">
+            <ImageView 
+                android:id="@+id/list_title_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView 
+                android:id="@+id/list_out_title"
+            	android:layout_width="wrap_content"
+            	android:layout_height="fill_parent"
+            	android:text="南海海域"
+            	android:textSize="18sp"
+            	android:layout_weight="1"
+            	android:gravity="center_vertical"/>
+            <TextView 
+                android:id="@+id/list_time"
+            	android:layout_width="wrap_content"
+            	android:layout_height="fill_parent"
+            	android:text="2014-02-20 10:44"
+            	android:textSize="14sp"
+            	android:textColor="#ACACAD"
+            	android:gravity="right|bottom"
+            	android:layout_weight="1"
+            	android:paddingRight = "8dp"/>
+        </LinearLayout>
+        
+        <View 
+        	android:layout_width = "fill_parent"
+        	android:layout_height="0.5dp"
+        	android:background="#C7C7C7"/>
+    	<View 
+        	android:layout_width = "fill_parent"
+        	android:layout_height="0.5dp"
+        	android:background="#FFFFFF"/>
+    	<RelativeLayout 
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:paddingTop="8dp"
+    	    android:paddingLeft="13dp"
+    	    android:paddingRight="13dp"
+    	    android:paddingBottom="8dp"
+    	    >
+    	    <ImageView 
+    	        android:id="@+id/list_pic"
+    	        android:layout_width="86dp"
+    	        android:layout_height="68dp"
+    	        android:src="@drawable/shop"
+    	        android:layout_marginRight="13dp"/>
+    	    <TextView 
+    	        android:id="@+id/list_title"
+    	        android:layout_height="wrap_content"
+    	        android:layout_width="fill_parent"
+    	        android:text="风向"
+    	        android:textSize="16sp"
+    	        android:layout_toRightOf="@+id/list_pic"/>
+    	    
+    	    <TextView 
+    	        android:id="@+id/list_detail"
+    	        android:layout_height="wrap_content"
+    	        android:layout_width="fill_parent"
+    	        android:layout_marginTop="10dp"
+    	        android:text="偏北风"
+    	        android:textSize="15dp"
+    	        android:layout_below="@+id/list_title"
+    	        android:layout_alignLeft="@+id/list_title"
+    	        android:maxLines="2"
+    	        android:ellipsize="end"/>
+    	</RelativeLayout>
+    	
+    	<RelativeLayout 
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    >
+    	    <ImageView 
+    	        android:id="@+id/list_more"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentRight="true"
+    	        android:layout_alignParentBottom="true"
+    	        android:src="@drawable/arrows"
+    	        android:visibility="gone"/>
+    	    </RelativeLayout>
+</LinearLayout>

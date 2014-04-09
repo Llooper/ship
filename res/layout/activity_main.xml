@@ -1,0 +1,139 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout 
+        android:id="@+id/ll_main_Title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bar"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        >
+        <TextView 
+            android:id="@+id/tv_main_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+    
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" >
+
+        <RelativeLayout 
+            android:id="@+id/ll_main_ll"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+            <ImageView
+        		android:contentDescription="@string/main_description"
+       			android:id="@+id/cursor"
+        		android:layout_width="fill_parent"
+        		android:layout_height="100dp"
+        		android:layout_below="@+id/ll_main_ll2"
+        		android:layout_marginTop="50dp"
+        		android:scaleType="matrix"
+        		android:src="@drawable/a"
+        		android:visibility="gone"
+        	/>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vPager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#000000"
+                android:flipInterval="30"
+                android:persistentDrawingCache="animation"
+                android:layout_below="@+id/cursor"
+                android:layout_marginTop="-8dp" />
+            
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/ll_main_ll2"
+                android:layout_marginTop="-8dp"
+                android:visibility="gone"
+                />
+            <LinearLayout 
+                android:id="@+id/ll_main_ll2"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                >
+                <Button 
+                    android:id="@+id/btn_main_bus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    />
+                <Button 
+                    android:id="@+id/btn_main_wea"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+        			android:layout_weight="1"
+                     />
+                <Button 
+                    android:id="@+id/btn_main_msg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+        			android:layout_weight="1"
+                     />
+                
+                <Button 
+                    android:id="@+id/btn_main_img"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+        			android:layout_weight="1"
+                     />
+            </LinearLayout>
+            <TabWidget 
+                android:id="@android:id/tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:visibility="gone"
+                 />
+        </RelativeLayout>
+    </TabHost>
+    
+<RelativeLayout
+        android:id="@+id/rl_amBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/main_bottom"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
+    <Button 
+            android:id="@+id/btn_main_send"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/main_send_item"
+            />
+    <Button 
+            android:id="@+id/btn_main_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/main_more_item"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

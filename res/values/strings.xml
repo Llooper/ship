@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">船</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="ark_id">船号:</string>
+    <string name="title">标题</string>
+    <string name="time">时间</string>
+    <string name="poster">发布者</string>
+    <string name="detail">详细信息</string>
+    <string name="description">图片</string>
+    <string name="head">松开刷新</string>
+    
+    <string name="bus_info_title">新闻详细信息</string>
+    <string name="wea_info_title">天气详细信息</string>
+    <string name="msg_info_title">文字详细信息</string>
+    <string name="img_info_title">图片详细信息</string>
+    
+    <string name="info_title">详细信息</string>
+    
+    <string name="inquire_all">查询全部信息</string>
+    <string name="inquire_start">开始时间:</string>
+    <string name="inquire_end">结束时间:</string>
+    
+    <string name="geo_search">查询</string>
+    <string name="geo_select_date">请选择日期范围</string>
+    <string name="geo_select_lines">记录数</string>
+    <string name="geo_select_ark">请选择船号</string>
+    <string name="geo_pre_title">GPS信息选择框</string>
+    
+    <string name="main_description">滚动条</string>
+    
+    <string name="login_title">登录</string>
+    <string name="login_id">请输入手机号码</string>
+    <string name="login_pw">密码</string>
+    <string name="login_pw_code">记住密码</string>
+    <string name="login_register">注册账号</string>
+    
+    <string name="pulldown_footer">点击获取更多</string>
+    
+    <string name="send_msg">发送信息</string>
+    <string name="send_id_hint">可以为空/输入接收手机号</string>
+    <string name="send_to">发送到:</string>
+    <string name="send_level">等级:</string>
+    <string name="send_kind">类型:</string>
+    <string name="send_something">写点什么</string>
+    <string name="send">发送</string>
+    <string name="send_description">发送图片按钮</string>
+    <string name="send_pre_select_ark">选择船号</string>
+    <string name="send_pre_text">查询船号</string>
+    
+    <string name="setting">设置</string>
+    <string name="setting_start">开始时间:</string>
+    <string name="setting_end">结束时间:</string>
+    <string name="setting_sound">声音</string>
+    <string name="setting_shake">震动</string>
+    
+    <string name="set_properties">配置参数</string>
+    <string name="VersionCode">2.3.2</string>
+</resources>
